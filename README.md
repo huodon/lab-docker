@@ -48,7 +48,7 @@
 	|--- Node (npm)
 	|... Go
 	|... Ruby (gem)
-|------- lab:base -------|
+|------- lab: devtools -------|
 ```
 
 ## 构建镜像
