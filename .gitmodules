@@ -1,0 +1,27 @@
+[submodule "lab-gitlab"]
+	path = lab-gitlab
+	url = https://github.com/sameersbn/docker-gitlab.git
+[submodule "lab-gitlab-ci"]
+	path = lab-gitlab-ci
+	url = https://github.com/sameersbn/docker-gitlab-ci.git
+[submodule "lab-postgresql"]
+	path = lab-postgresql
+	url = https://github.com/sameersbn/docker-postgresql.git
+[submodule "lab-runner-gitlab"]
+	path = lab-runner-gitlab
+	url = https://github.com/sameersbn/docker-runner-gitlab.git
+[submodule "lab-redis"]
+	path = lab-redis
+	url = https://github.com/sameersbn/docker-redis.git
+[submodule "lab-nginx"]
+	path = lab-nginx
+	url = https://github.com/sameersbn/docker-nginx.git
+[submodule "lab-nodejs"]
+	path = lab-nodejs
+	url = https://github.com/sameersbn/docker-nodejs.git
+[submodule "lab-mysql"]
+	path = lab-mysql
+	url = https://github.com/sameersbn/docker-mysql.git
+[submodule "lab-mongodb"]
+	path = lab-mongodb
+	url = https://github.com/sameersbn/docker-mongodb.git

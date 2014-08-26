@@ -1,0 +1,16 @@
+set submodule "https://github.com/sameersbn/docker-gitlab.git
+https://github.com/sameersbn/docker-gitlab-ci.git
+https://github.com/sameersbn/docker-postgresql.git
+https://github.com/sameersbn/docker-postgresql.git
+https://github.com/sameersbn/docker-runner-gitlab.git
+https://github.com/sameersbn/docker-redis.git
+https://github.com/sameersbn/docker-nginx.git
+https://github.com/sameersbn/docker-nodejs.git
+https://github.com/sameersbn/docker-mysql.git
+https://github.com/sameersbn/docker-mongodb.git"
+
+
+for i in (cat submodule)
+	set name (echo $i | sed "s/https:\/\/github\.com\/sameersbn\/docker/lab/g; s/\.git//g")
+	git submodule add $i $name
+end
