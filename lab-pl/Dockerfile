@@ -1,4 +1,4 @@
-FROM lab:bast
+FROM  zchxlab/devtools
 MAINTAINER huodong <huodon@gmail.com>
 
 WORKDIR /home
@@ -17,6 +17,7 @@ ENV PATH $JAVA_HOME/bin:$SCALA_HOME/bin:/usr/local/sbt/bin:$PATH
 RUN \
 	wget -qO- --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" $JDK_URL -O - | tar -xzvf - && \
 	mv `ls` /usr/local/JDK
+# TODO install mvn
 
 # Scala
 # ------------------------------------------------------------------
@@ -27,7 +28,8 @@ RUN \
 # Clojure
 # ------------------------------------------------------------------
 RUN \
-	curl https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein > /bin/lein && \
+	wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein && \
+    mv lein /bin/lein && \
 	chmod 755 /bin/lein && \
 	/bin/lein
 
@@ -38,6 +40,8 @@ RUN \
 	apt-get update && \
 	apt-get install -y nodejs && \
 	npm update -g && \
-	apt-get clean
+	apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
-VOLUME ["/home/share"]
+# TODO write startup script aoto executable /data/apps
+VOLUME ["/data"]

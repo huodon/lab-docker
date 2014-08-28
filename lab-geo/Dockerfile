@@ -1,6 +1,5 @@
-FROM lab:base
+FROM zchxlab/baseimage
 MAINTAINER huodong <huodon@gmail.com>
-WORKDIR /home
 
 # OpenGeo Suite
 # ------------------------------------------------------------------
@@ -22,4 +21,4 @@ ADD ./attach/startup.sh /home/startup.sh
 RUN chmod 755 /home/startup.sh
 ENTRYPOINT /home/startup.sh
 
-VOLUME ["/home/share"]
+VOLUME ["/data"]
