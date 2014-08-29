@@ -25,3 +25,6 @@
 [submodule "lab-mongodb"]
 	path = lab-mongodb
 	url = https://github.com/sameersbn/docker-mongodb.git
+[submodule "lab-base"]
+	path = lab-base
+	url = https://github.com/sameersbn/docker-ubuntu.git
