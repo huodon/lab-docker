@@ -1,6 +1,6 @@
 # docker container layout graph
 
-> 所有已构建的镜像可在 `ZCHXNAS/public/DockerImages` 下载
+> 所有已构建的镜像可在 `/public/DockerImages` 下载
 
 ## 基础镜像
 
